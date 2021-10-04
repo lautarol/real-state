@@ -14,3 +14,6 @@
 
 ## Run the specs
 Run `rspec` command.
+
+## test data
+You can run `rake db:seed` command to create test data.
