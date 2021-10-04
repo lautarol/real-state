@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_10_01_182705) do
 
   create_table "properties", force: :cascade do |t|
     t.string "name", limit: 128, null: false
-    t.integer "type", null: false
+    t.integer "property_type", null: false
     t.string "street", limit: 128, null: false
     t.string "external_number", limit: 12, null: false
     t.string "internal_number", limit: 12
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_10_01_182705) do
     t.string "country", limit: 2, null: false
     t.integer "rooms", null: false
     t.float "bathrooms", null: false
+    t.string "comments"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
